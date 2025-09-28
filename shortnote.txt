@@ -1,0 +1,8 @@
+I didn't really have any problems, as the code worked relatively well.
+It took me a few to figure out the correct items to put into the empty fields.
+One of the challenges was trying to correctly handle hte large numbers for the token amounts, and it not lead to precision errors.
+Viem's parseunits and formatunits helped in that field. It convered the readable format in the UI that was required by the smart contract.
+
+I also had to make sure it was saved locally as well, like the token address and team.
+The DApp also automatically watches for the transfer events involving the account and refreshes the account whenever I sent or recieved tokens.
+It also provides the colored statuses depending on if it was successful, not successful, or an error.
